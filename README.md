@@ -9,4 +9,8 @@ Serializers allow complex data such as querysets and model instanced to be conve
 
 Serializers also provide deseralization, allowing parsed data to be ocnverted back into complex types.
 
-2. Create a serializer to take the model of leads, the queryset and to convert it to JSON.
+2. Create a serializer to take the model of leads, the queryset and to convert it to JSON. We will do it with a class of serializer.
+
+This way we turn our lead model into a serializer.
+
+3. Once created the serializer, we need to create the API
