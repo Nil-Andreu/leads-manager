@@ -25,4 +25,25 @@ Inside of the leads app urls, we are not going to create explicitly urls, as we 
 
 In the urlpatterns of leads url file, we are gonig ot set that will be equal to the router.urls, which gives us the urls registered for the endpoint o fapi/leads.
 
+5. We can now test the API with Postman. We run first the server, and then go to Postman to: http://localhost:8000/api/leads/. 
+
+We can do a post rqeuest to this url. For the header we are going to add a Content-Type. And the value is application/json. And then for the body we can write:
+    {
+        "name":"juan",
+        "email":"juan@gmail.com",
+        "message":"Contactame"
+    }
+
+And what we will obtain is:
+    {
+        "id": 1,
+        "name": "juan",
+        "email": "juan@gmail.com",
+        "message": "Contactame",
+        "created_at": "2021-07-03T20:39:43.155856Z"
+    }
+We sohuld obtain a status of 201, which is a succees status.
+We could create another one.
+
+If we now put in the url http://localhost:8000/api/leads/1/, and a GET request, we are going to obtain the information we just have uploaded.
 
