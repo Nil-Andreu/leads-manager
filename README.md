@@ -19,3 +19,10 @@ We create a viewset, which allows us to create a full CRUD API (Create, Read, Up
 
 We do not have to even create our routes. We can use the default route, which register the endpoint and then we can make the requests to this endpoint.
 
+4. Create the urls inside of the leadsmanager project, which will include the file of the leads app.
+
+Inside of the leads app urls, we are not going to create explicitly urls, as we are going to use the router from rest_framework.
+
+In the urlpatterns of leads url file, we are gonig ot set that will be equal to the router.urls, which gives us the urls registered for the endpoint o fapi/leads.
+
+
