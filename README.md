@@ -83,7 +83,10 @@ Now, we are going to create the index.js inside of src as well as the App.js ins
 
 So we will create the default structure that will enable us React.
 
-Having done this, we are going to run npm run dev. And we will see that it is created a main.js file inside of static. Which is the compiled JS, which is the JS that is being imported in the HTML.
+Having done this, we are going to run npm run dev (being in the frontend folder). And we will see that it is created a main.js file inside of static. Which is the compiled JS, which is the JS that is being imported in the HTML.
+
+
+
 
 
 

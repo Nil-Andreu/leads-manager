@@ -1,7 +1,7 @@
-import React, {Component} from 'react-dom'
+import React from 'react-dom'
 import ReactDOM from 'react'
 
-class App extends React.Component{
+export default class App extends React.Component {
     render() {
         return <h1>React App</h1>
     }
