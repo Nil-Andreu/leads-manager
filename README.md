@@ -72,16 +72,18 @@ Then, we have to configure babel with the file of .babelrc.
 Finally, we configure webpack inside of webpack.config.js.
 
 ## 7. Preparing front-end views
-Go to views.py of the frontend app, and create the view with python and inside of template create the React basic structure (index.html and main.js).
+Go to views.py of the frontend app, and create the view with python and inside of template create the React basic structure (index.html).
 
 Moreover, you can include the urls inside of urls.py.
 
 Remember to register this app inside of the settings and include those urls on leadmanager.
 
 ## 8. Creating React front-end
-Now, we are going to create the index.js inside of src as well as the App.js (which will contain our react application).
+Now, we are going to create the index.js inside of src as well as the App.js inside of components folder (which will contain our react application).
 
 So we will create the default structure that will enable us React.
+
+Having done this, we are going to run npm run dev. And we will see that it is created a main.js file inside of static. Which is the compiled JS, which is the JS that is being imported in the HTML.
 
 
 
