@@ -47,3 +47,7 @@ We could create another one.
 
 If we now put in the url http://localhost:8000/api/leads/1/, and a GET request, we are going to obtain the information we just have uploaded.
 
+We can do the different request as it is a full API CRUD.
+
+6. Now it is time to implement React.
+
