@@ -61,7 +61,15 @@ Then, we are going to init the environment for React: npm init -y.
 
 Then, we are going to open the package.json in an integrated terminal, and install the Webpack: npm i webpack webpack-cli --save-dev.
 
-We configure inside of package json the scripts for dev and build (one for development and the other for production)
+We configure inside of package json the scripts for dev and build (one for development and the other for production).
+
+Now it is time to install babel, which is the transpiler: npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev.
+
+Next, pull in React dependencies: npm i react react-dom --save-dev.
+
+Then, we have to configure babel with the file of .babelrc.
+
+
 
 
 
