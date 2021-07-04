@@ -69,6 +69,13 @@ Next, pull in React dependencies: npm i react react-dom --save-dev.
 
 Then, we have to configure babel with the file of .babelrc.
 
+Finally, we configure webpack inside of webpack.config.js.
+
+## 7. Preparing front-end views
+Go to views.py of the frontend app, and create the view with python and inside of template create the React basic structure (index.html and main.js).
+
+Moreover, you can include the urls inside of urls.py.
+
 
 
 
