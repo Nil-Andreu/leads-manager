@@ -76,7 +76,12 @@ Go to views.py of the frontend app, and create the view with python and inside o
 
 Moreover, you can include the urls inside of urls.py.
 
+Remember to register this app inside of the settings and include those urls on leadmanager.
 
+## 8. Creating React front-end
+Now, we are going to create the index.js inside of src as well as the App.js (which will contain our react application).
+
+So we will create the default structure that will enable us React.
 
 
 
