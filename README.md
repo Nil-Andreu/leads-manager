@@ -1,5 +1,6 @@
 # Lead manager
 This app is going to be used to handle leads of different users.
+We are going to use Bootstrap for the stylesheets.
 
 In this README file, you will learn the steps that it took to build it:
 ## 1. Django Rest Framework
