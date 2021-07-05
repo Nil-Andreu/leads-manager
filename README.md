@@ -97,8 +97,13 @@ We will add some basic components that we will use for this lead manager app. Sp
 
 Those components will have Boostrap as styling, as this is only a project for practical example (so we are not focusing on styles)
 
+## 10. Implementing Redux
+We are going to use Redux, as we need a single source of truth. As we are going ot have leads and authentication, so we need some form to save our state of the application.
 
+We can install Redux DevTools for Chrome, so we can see a clear image of how the state of the Redux is.
 
+So we go ot our terminal, and put: npm install redux react-redux redux-thunk redux-devtools-extension
 
+Where redux-thunk will allow us to make asynchrnous requests.
 
-
+One of the first thinks when implementing Redux, is to start with the store.
