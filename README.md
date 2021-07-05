@@ -86,6 +86,17 @@ So we will create the default structure that will enable us React.
 
 Having done this, we are going to run npm run dev (being in the frontend folder). And we will see that it is created a main.js file inside of static. Which is the compiled JS, which is the JS that is being imported in the HTML.
 
+Take into consideration taht in package.json, if we put in the dev script --watch, we will not have to hard reload every time we have changed something, it will recompile automatically.
+
+## 9. Adding components
+We will add some basic components that we will use for this lead manager app. Specifically, we will build:
+- Header (inside of layout folder)
+- Dashboard (which will contain the following two)
+- Leads (a list of the different lists)
+- Form (form to put new leads)
+
+Those components will have Boostrap as styling, as this is only a project for practical example (so we are not focusing on styles)
+
 
 
 
