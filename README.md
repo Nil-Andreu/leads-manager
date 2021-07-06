@@ -144,3 +144,5 @@ So we are going to import combineReducers, which will have all the reducers that
 Inside of the App.js, we are going to bring in a couple of things:
 - store: 
 - provider: which will make it possible to use Redux with React.
+
+We use this Provider as a tag, which will take as a prop the store.
