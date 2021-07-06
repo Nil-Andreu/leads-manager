@@ -132,3 +132,15 @@ And finally, export the store so we can import it in the app.
 ## 12. Implementing Redux: reducers
 We are now going to create the rootReducer.
 For this, we create the folder reducers inside of the src folder, and create a new file called index.js.
+
+Reducers is just a meeting place for all the other reducers. So we are going to have a leads reducers, which handles the state that has to do with leads.
+
+We are going to have an auth reducer, which handles authentication.
+
+Also an error reducer to handle the errors.
+
+So we are going to import combineReducers, which will have all the reducers that we will have.
+
+Inside of the App.js, we are going to bring in a couple of things:
+- store: 
+- provider: which will make it possible to use Redux with React.
