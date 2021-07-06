@@ -3,6 +3,7 @@ This app is going to be used to handle leads of different users.
 We are going to use Bootstrap for the stylesheets.
 
 In this README file, you will learn the steps that it took to build it:
+
 ## 1. Django Rest Framework
 Install django-rest-framework and django-rest-knox (which the last one is used for the auth).
 Inside of the requirements.txt you are going to see which are the dependencies. To insall them, pip install requirements.txt.
@@ -106,7 +107,7 @@ So we go ot our terminal, and put: npm install redux react-redux redux-thunk red
 
 Where redux-thunk will allow us to make asynchrnous requests.
 
-## 11. Implementing Redux
+## 11. Implementing Redux: store.js
 
 One of the first thinks when implementing Redux, is to start with the store.
 
@@ -121,7 +122,13 @@ There we are going to do the necessary imports:
 
 Then, we put the initial state of our app, which will be just an empty object.
 Also gonna createa variable which will contian any middleware we will use.
-Moreover, we will have to create the actual store, which will be eequal to createStore() imported. This will take;
+Moreover, we will have to create the actual store, which will be equal to createStore() imported. This will take;
 - rootReducer
 - the initial state we have created above
-- and any middleware we want to use, as we are using devtools extension we are going to put composeWithDevTools
+- and any middleware we want to use, as we are using devtools extension we are going to put composeWithDevTools. The middleware we want to apply is everyone we have inside of middleware array, so we use the spread operator.
+
+And finally, export the store so we can import it in the app.
+
+## 12. Implementing Redux: reducers
+We are now going to create the rootReducer.
+For this, we create the folder reducers inside of the src folder, and create a new file called index.js.
