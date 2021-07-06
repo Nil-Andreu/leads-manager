@@ -118,3 +118,10 @@ There we are going to do the necessary imports:
 - composeWithDevTools
 - thunk
 - rootReducer: which will look for a file called index.js inside of the folder reducers
+
+Then, we put the initial state of our app, which will be just an empty object.
+Also gonna createa variable which will contian any middleware we will use.
+Moreover, we will have to create the actual store, which will be eequal to createStore() imported. This will take;
+- rootReducer
+- the initial state we have created above
+- and any middleware we want to use, as we are using devtools extension we are going to put composeWithDevTools
