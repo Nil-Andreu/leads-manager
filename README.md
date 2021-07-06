@@ -109,3 +109,12 @@ Where redux-thunk will allow us to make asynchrnous requests.
 ## 11. Implementing Redux
 
 One of the first thinks when implementing Redux, is to start with the store.
+
+We are going to create a filde inside of the src folder, which will be called store.js.
+
+There we are going to do the necessary imports:
+- createStore: necessary for creating the actual store of Redux.
+- applyMiddleware: as we are using thunk
+- composeWithDevTools
+- thunk
+- rootReducer: which will look for a file called index.js inside of the folder reducers
