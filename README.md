@@ -146,3 +146,9 @@ Inside of the App.js, we are going to bring in a couple of things:
 - provider: which will make it possible to use Redux with React.
 
 We use this Provider as a tag inside of the App.js, which will take as a prop the store.
+
+When we call an action that changes the state, it will be shown in the Diff part of the Redux DevTools.
+
+We will work in the index.js of reducers, and for the moment we will lead with the leads. So we import the leads and put them inside of combineReducers as an object. This reducer is one that we are going to create also.
+
+
