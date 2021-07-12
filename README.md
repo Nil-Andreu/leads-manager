@@ -168,6 +168,12 @@ Then we create a function, which is going to take two things:
 
 Next, we need to create a leads actions file inside of actions. Any actions we want to fire off are going to be here. This is where i will make the HTTP requests with axios (npm install axios).
 
-This leads action for getting is going to be called inside of leads list component.
+This leads action for getting is going to be called inside of leads list component. So we go to Leads.js. In order to work with Redux in any component, you need to use something called connect (which is part of react-redux package). 
+
+So the flow of this is:
+a. We call get_leads action 
+b. Leads come down from the reducer to the component as a prop
+
+So we need to get the state, and then be able to call the get lead method. This is done inside of mapState of Leads.js.
 
 
