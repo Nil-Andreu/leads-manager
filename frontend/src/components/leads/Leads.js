@@ -21,7 +21,7 @@ export class Leads extends Component {
 
 // The map state we refer to the leads state, and we wannt to map it to props of the component
 // In  this case, we want to leadsReducer (inside of index.js). And the leads is the part of the state we want, which is the one returned by the leads reducer.
-const mapStateToProps = state = ({
+const mapStateToProps = state => ({
 
     // This means that we are going to have a prop which is leads
     leads: state.leadsReducer.leads
@@ -29,4 +29,4 @@ const mapStateToProps = state = ({
 
 // Whenever we use connect, we have to export like:
 // Where we first map the state to get the props, and then connect this props to leads component
-export default connect(mapStateToProps)(Leads);
+export default connect(mapStateToProps, {getLeads})(Leads);
