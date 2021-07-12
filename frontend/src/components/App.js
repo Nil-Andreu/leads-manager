@@ -9,8 +9,8 @@ import store from "../store";
 class App extends Component {
   render() {
     return (
-      <Provider>
-        <Fragment store={store}>
+      <Provider store={store}>
+        <Fragment>
           <Header />
           <div class="container">
             <Dashboard />
