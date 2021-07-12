@@ -160,4 +160,14 @@ For those actions, we are going to create a folder inside of src. nd the way we 
 
 Those types are constants that pulls an instring. 
 
+Then once imported, we create the initial state. In our case, all we want is an empty array.
+
+Then we create a function, which is going to take two things:
+- state, which is going to be set to the default one
+- action, which is the leads action file where we fire off actions and we can dispatch action to the reducer (to get_lead, add_lead, ...).
+
+Next, we need to create a leads actions file inside of actions. Any actions we want to fire off are going to be here. This is where i will make the HTTP requests with axios (npm install axios).
+
+This leads action for getting is going to be called inside of leads list component.
+
 
