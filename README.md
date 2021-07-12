@@ -151,4 +151,13 @@ When we call an action that changes the state, it will be shown in the Diff part
 
 We will work in the index.js of reducers, and for the moment we will lead with the leads. So we import the leads and put them inside of combineReducers as an object. This reducer is one that we are going to create also.
 
+A reducer what makes is to evaluate an action, and then it sends down a certain state depending on this action. In the case of the lead, we are going to have different actions:
+- Get lead
+- Delete lead
+- ...
+
+For those actions, we are going to create a folder inside of src. nd the way we define leads is with something called types, which we import in the file of leads.js. 
+
+Those types are constants that pulls an instring. 
+
 
