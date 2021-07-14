@@ -10,17 +10,20 @@ export const getLeads = () => (dispatch) => {
   // We do the http request with axios, which will return a promise we handle with .then()
   axios
     .get("/api/leads/")
-    // This promise is going to give us a reponse
     .then((res) => {
-      // We want to dispatch the get leads action to the reducer (which will be evaluate din the leads reducers)
-      // So to dispatch, we pass an object
       dispatch({
         type: GET_LEADS,
 
-        // The payload, is going to be the leads returned from the server
         payload: res.data,
       });
     })
     .catch((err) => console.log(err));
-  // The .catch is for the case taht there is some error.
 };
+
+// We want to dispatch the get leads action to the reducer (which will be evaluate din the leads reducers)
+// This promise is going to give us a reponse, which we collect with .then
+
+// So to dispatch, we pass an object
+// The payload, is going to be the leads returned from the server
+
+// The .catch is for the case taht there is some error.
