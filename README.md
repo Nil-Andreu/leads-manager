@@ -34,7 +34,7 @@ In the urlpatterns of leads url file, we are gonig ot set that will be equal to 
 ## 5. REST API
 We can now test the API with Postman. We run first the server, and then go to Postman to: http://localhost:8000/api/leads/. 
 
-We can do a post rqeuest to this url. For the header we are going to add a Content-Type. And the value is application/json. And then for the body we can write:
+We can do a post request to this url. For the header we are going to add a Content-Type. And the value is application/json. And then for the body we can write:
     {
         "name":"juan",
         "email":"juan@gmail.com",
@@ -175,5 +175,7 @@ a. We call get_leads action
 b. Leads come down from the reducer to the component as a prop
 
 So we need to get the state, and then be able to call the get lead method. This is done inside of mapState of Leads.js.
+
+Inside of Lead.js we have the explanatino of how it is working.
 
 
