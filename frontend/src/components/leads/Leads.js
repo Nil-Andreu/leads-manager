@@ -18,7 +18,7 @@ export class Leads extends Component {
   componentDidMount() {
     this.props.getLeads(); // We call to the getLeads action from props that we passed with connection
   }
-  // Going to make a table with the leads property and we map throught this array
+  // Going to make a table with the leads property and use the map function to go throught this array .map(i => (what we want to do for each i))
   render() {
     return (
       <Fragment>
