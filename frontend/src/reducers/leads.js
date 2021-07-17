@@ -1,4 +1,4 @@
-import { GET_LEADS } from '../actions/types'
+import { GET_LEADS, DELETE_LEAD } from '../actions/types'
 
 // Now we create the initial state
 const initialState = {
@@ -18,6 +18,16 @@ export default function(state = initialState, action) {
                 // which i am going to send those as a paid load in the action
                 leads: action.payload
             }
+        
+            case DELETE_LEAD:
+                return {
+                    ...state, // WE want to obtain the current state
+
+                    // For the leads, we want to filter through, and only return the ones which are not the id lead button pressed
+                    // Filter is a method for an array, in which we say that for each lead we want to return anything where lead id is not the same as the one of payload
+                    leads: state.leads.filter(lead => lead.id !== action.payload)
+                    // So we are deleting the lead, and then run the reducer to delete it in the ui
+                }
 
         // The case by default
         default:

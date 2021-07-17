@@ -183,3 +183,5 @@ For deleting the leads, we have to follow the before steps.
 
 We need to create a delete action, we go inside of the action sfolders of leads.js, and write the code for the deletion. Also, go inside of types.js and write the delete type action.
 
+This DELETE_LEAD action is going to be dispatched to the reducer. So we go inside of the leads reducer, and add a case for DELETE_LEAD.
+
