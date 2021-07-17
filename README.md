@@ -178,4 +178,8 @@ So we need to get the state, and then be able to call the get lead method. This 
 
 Inside of Lead.js we have the explanatino of how it is working.
 
+## 13. Delete leads
+For deleting the leads, we have to follow the before steps.
+
+We need to create a delete action, we go inside of the action sfolders of leads.js, and write the code for the deletion. Also, go inside of types.js and write the delete type action.
 

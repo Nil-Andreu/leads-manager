@@ -1,7 +1,8 @@
 import axios from "axios";
 
-import { GET_LEADS } from "./types";
+import { GET_LEADS, DELETE_LEAD } from "./types";
 
+// GET LEADS
 // We have the action method for getting leads
 export const getLeads = () => (dispatch) => {
   // We are making a HTTP request to /api/leads.
@@ -14,7 +15,7 @@ export const getLeads = () => (dispatch) => {
       dispatch({
         type: GET_LEADS,
 
-        payload: res.data,
+        payload: id,
       });
     })
     .catch((err) => console.log(err));
@@ -27,3 +28,20 @@ export const getLeads = () => (dispatch) => {
 // The payload, is going to be the leads returned from the server
 
 // The .catch is for the case taht there is some error.
+
+
+// DELETE LEADS
+export const deleteLeads = (id) => (dispatch) => {
+  // This function has an id, as we want to know which one to delete
+
+  axios
+    .get(`/api/leads/${id}/`) //We obtain the leads we want to delete
+    .then((res) => {
+      dispatch({
+        type: DELETE_LEAD,
+
+        payload: res.data,
+      });
+    })
+    .catch((err) => console.log(err));
+};
