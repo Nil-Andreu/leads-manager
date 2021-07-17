@@ -12,6 +12,10 @@ export class Leads extends Component {
   static propTypes = {
     // We pass the proptypes as an array of the leads, and this is required
     leads: PropTypes.array.isRequired,
+
+    // And also the functions that are going to be used we pass them as proptypes (good practices)
+    getLeads: PropTypes.func.isRequired,
+    deleteLead: PropTypes.func.isRequired
   };
 
   // We want to call the getLeads action when the component loads. This way we make the request

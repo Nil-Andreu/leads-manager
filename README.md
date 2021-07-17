@@ -187,3 +187,15 @@ This DELETE_LEAD action is going to be dispatched to the reducer. So we go insid
 
 Then, we have to call this action in some point. So we go to the component of leads, and add the function to it (in the onclick, we need to pass the id, for this we use the .bind, which has the this as first parameter and as second whathever we want to pass). Remember that the function should be added to the connect, so we have access to it.
 
+## 14. Add Leads
+Now we are going to add the leads form. So we go inside of the form component.
+
+Then we go to the actions, and create a new type. In the action of add Lead, is going to be a post request to the api/leads, where we have to pass the lead.
+
+Then go to the reducer, and create the new case.
+
+Finally, we have to add this add lead action to the form component. We need to configure:
+- connect
+- PropTypes
+- 
+
