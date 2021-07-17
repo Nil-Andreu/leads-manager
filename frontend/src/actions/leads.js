@@ -15,7 +15,7 @@ export const getLeads = () => (dispatch) => {
       dispatch({
         type: GET_LEADS,
 
-        payload: id,
+        payload: res.data,
       });
     })
     .catch((err) => console.log(err));
@@ -31,7 +31,7 @@ export const getLeads = () => (dispatch) => {
 
 
 // DELETE LEADS
-export const deleteLeads = (id) => (dispatch) => {
+export const deleteLead = (id) => (dispatch) => {
   // This function has an id, as we want to know which one to delete
 
   axios
@@ -40,7 +40,7 @@ export const deleteLeads = (id) => (dispatch) => {
       dispatch({
         type: DELETE_LEAD,
 
-        payload: res.data,
+        payload: id,
       });
     })
     .catch((err) => console.log(err));

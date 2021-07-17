@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
 // Import the get_leads action
-import { getLeads } from "../../actions/leads";
+import { getLeads, deleteLead } from "../../actions/leads";
 
 export class Leads extends Component {
   // Once we have the mapStateToProps, we are going to pass as props the leads
@@ -41,7 +41,7 @@ export class Leads extends Component {
                 <td>{lead.email}</td>
                 <td>{lead.message}</td>
                 <td>
-                  <button className="btn btn-danger btn-sm">Delete</button>
+                  <button className="btn btn-danger btn-sm" onClick={this.props.deleteLead.bind(this, lead.id)}>Delete</button>
                 </td>
               </tr>
             ))}
@@ -61,6 +61,6 @@ const mapStateToProps = (state) => ({
 
 // Whenever we use connect, we have to export like:
 // Where we first map the state to get the props, and then connect this props to leads component
-export default connect(mapStateToProps, { getLeads })(Leads);
+export default connect(mapStateToProps, { getLeads, deleteLead })(Leads);
 // We are mapping the state, as well as passing the action of getLeads when Leads component is called
 // This action will be called when the component is rendered
