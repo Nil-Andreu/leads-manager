@@ -35,7 +35,7 @@ export const deleteLead = (id) => (dispatch) => {
   // This function has an id, as we want to know which one to delete
 
   axios
-    .get(`/api/leads/${id}/`) //We obtain the leads we want to delete
+    .delete(`/api/leads/${id}/`) //We obtain the leads we want to delete
     .then((res) => {
       dispatch({
         type: DELETE_LEAD,
