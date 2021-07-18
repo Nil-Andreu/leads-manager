@@ -197,5 +197,10 @@ Then go to the reducer, and create the new case.
 Finally, we have to add this add lead action to the form component. We need to configure:
 - connect
 - PropTypes
-- 
+- onChange
+- onSubmit
 
+So we can see the pattern of:
+* First, create the type and the action (which is the query)
+* Second, create the reducer that will handle the change of state
+* Use the component to trigger the action on an event
