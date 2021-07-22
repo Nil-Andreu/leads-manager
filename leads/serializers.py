@@ -9,4 +9,5 @@ class LeadSerializer(serializers.ModelSerializer):
 
         # We are going to take all the fields of the model this way
         fields = '__all__'
-        # fields = ('name', 'email') If we just wanted just a couple of fields
+        # fields = ('name', 'email') If we just wanted just a couple of 
+        
