@@ -219,7 +219,8 @@ So we go to the App.js, where we need to include our alert provider. This provid
 - Once this provider wraps all, we will be able to use it in our project whenever component. We will create a new component only to handle those. We will go to the components, and then inside of layout we will create Alert.js.
 And this component Alert we will bring it to the App.js.
 
-- Now we will create the errors reducer. For this, inside of the folder of reducers we create errors.js
+- Now we will create the errors reducer. For this, inside of the folder of reducers we create errors.js. We also add a new type of action.
+Once reducer created, we go inside of leads.js, and we will change where we catch the errors for adding leads.
 
 
 

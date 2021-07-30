@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { GET_LEADS, DELETE_LEAD, ADD_LEAD } from "./types";
+import { GET_LEADS, DELETE_LEAD, ADD_LEAD, GET_ERRORS } from "./types";
 
 // GET LEADS
 // We have the action method for getting leads
@@ -58,5 +58,14 @@ export const addLead = (lead) => (dispatch) => {
         payload: res.data, // When we add a new lead, the data that comes back is the new id, name, ... of the lead 
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      const errors = {
+        message: err.response.data,
+        status: err.response.status
+      }
+      dispatch({
+        type: GET_ERRORS, // We will dispatch this type of error
+        payload: errors //The payload will be the errors object
+      })
+    }); //If we put err.response.data will show us which type of error it is
 };

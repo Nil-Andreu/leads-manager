@@ -11,7 +11,7 @@ export class Alerts extends Component {
 
   // We will not render anything, will be just the pop up
   render() {
-    return <Fragment />;
+    return <Fragment />
   }
 }
 
