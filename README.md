@@ -204,3 +204,13 @@ So we can see the pattern of:
 * First, create the type and the action (which is the query)
 * Second, create the reducer that will handle the change of state
 * Use the component to trigger the action on an event
+
+## 15. Error handling
+If we now for example put an email that is already in the database, it will have a 400 (bad request). So we need to handle those errors.
+
+The way we are going to do that is with a error reducer, where we are going to store those errors in the state.
+
+We will have a component that is catching those errors and display them to us. For this, we will use a third party package called react-alert. This is a component that will pop-up the error. For doing this:
+- npm install --save react-alert react-alert-template-basic react-transition-group
+- We will have a provider, the alert provider, which will wrap around everything. And for any component we want to use it, we just wrap the default export with this withAlert(Component).
+So we go to the App.js, where we need to include our alert provider.
