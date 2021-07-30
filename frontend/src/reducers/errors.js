@@ -7,7 +7,7 @@ const initialState = {
 
 export default function(state = initialState, action) {
     switch(action.type) {
-        case GET_ERRORS:
+        case GET_ERROR:
             return {
                 message: action.payload.message,
                 status: action.payload.status

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { GET_LEADS, DELETE_LEAD, ADD_LEAD, GET_ERRORS } from "./types";
+import { GET_LEADS, DELETE_LEAD, ADD_LEAD, GET_ERROR } from "./types";
 
 // GET LEADS
 // We have the action method for getting leads
@@ -29,7 +29,6 @@ export const getLeads = () => (dispatch) => {
 
 // The .catch is for the case taht there is some error.
 
-
 // DELETE LEADS
 export const deleteLead = (id) => (dispatch) => {
   // This function has an id, as we want to know which one to delete
@@ -48,24 +47,23 @@ export const deleteLead = (id) => (dispatch) => {
 
 // ADD LEADS
 export const addLead = (lead) => (dispatch) => {
-
   axios
-    .post(`/api/leads/`, lead) 
+    .post(`/api/leads/`, lead)
     .then((res) => {
       dispatch({
         type: ADD_LEAD,
 
-        payload: res.data, // When we add a new lead, the data that comes back is the new id, name, ... of the lead 
+        payload: res.data, // When we add a new lead, the data that comes back is the new id, name, ... of the lead
       });
     })
     .catch((err) => {
       const errors = {
         message: err.response.data,
-        status: err.response.status
-      }
+        status: err.response.status,
+      };
       dispatch({
-        type: GET_ERRORS, // We will dispatch this type of error
-        payload: errors //The payload will be the errors object
-      })
+        type: GET_ERROR, // We will dispatch this type of error
+        payload: errors, //The payload will be the errors object
+      });
     }); //If we put err.response.data will show us which type of error it is
 };

@@ -6,13 +6,13 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light"> 
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-sm navbar-light bg-light"> 
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
               Lead Manager
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -20,9 +20,9 @@ export default class Header extends Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse" id="navbarNav">
             </div>
           </div>
         </nav>
