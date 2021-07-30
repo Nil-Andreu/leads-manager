@@ -212,5 +212,14 @@ The way we are going to do that is with a error reducer, where we are going to s
 
 We will have a component that is catching those errors and display them to us. For this, we will use a third party package called react-alert. This is a component that will pop-up the error. For doing this:
 - npm install --save react-alert react-alert-template-basic react-transition-group
+
 - We will have a provider, the alert provider, which will wrap around everything. And for any component we want to use it, we just wrap the default export with this withAlert(Component).
-So we go to the App.js, where we need to include our alert provider.
+So we go to the App.js, where we need to include our alert provider. This provider will need as a prop the template as well as the options.
+
+- Once this provider wraps all, we will be able to use it in our project whenever component. We will create a new component only to handle those. We will go to the components, and then inside of layout we will create Alert.js.
+And this component Alert we will bring it to the App.js.
+
+- Now we will create the errors reducer. For this, inside of the folder of reducers we create errors.js
+
+
+
