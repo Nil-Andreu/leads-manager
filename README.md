@@ -6,9 +6,9 @@ In this README file, you will learn the steps that it took to build it:
 
 ## 1. Django Rest Framework
 Install django-rest-framework and django-rest-knox (which the last one is used for the auth).
-Inside of the requirements.txt you are going to see which are the dependencies. To insall them, pip install requirements.txt.
+Inside of the requirements.txt you are going to see which are the dependencies (pip freeze > requirements.txt to put the dependencies inside of the text file). To install them, pip install requirements.txt.
 
-Serializers allow complex data such as querysets and model instanced to be converted to native Python datatypes that can be then easily rendered into JSON..
+Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can be then easily rendered into JSON.
 
 Serializers also provide deseralization, allowing parsed data to be ocnverted back into complex types.
 
