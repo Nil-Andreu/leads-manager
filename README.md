@@ -10,10 +10,10 @@ Inside of the requirements.txt you are going to see which are the dependencies (
 
 Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can be then easily rendered into JSON.
 
-Serializers also provide deseralization, allowing parsed data to be ocnverted back into complex types.
+Serializers also provide deserialization, allowing parsed data to be converted back into complex types.
 
 ## 2. Serializer 
-Create a serializer to take the model of leads, the queryset and to convert it to JSON. We will do it with a class of serializer.
+Create a serializer to take the model of leads, the queryset and to convert it to JSON. We will do it with a class of serializer in the file of serializers.py.
 
 This way we turn our lead model into a serializer.
 
