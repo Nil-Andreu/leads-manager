@@ -13,7 +13,7 @@ import { Provider } from "react-redux";
 import store from "../store";
 
 // Alert options (which will be spreader inside of the AlertProvider insnide of App Component)
-const options = {
+const alertOptions = {
   timeout: 3000, // in miliseconds
   position: "top center", //where is going to apper the alert
 };
@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <AlertProvider template={AlertTemplate} {...options}>
+        <AlertProvider template={AlertTemplate} {...alertOptions}>
           <Fragment>
             <Header />
             <Alerts />

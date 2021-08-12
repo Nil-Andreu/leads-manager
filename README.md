@@ -1,5 +1,5 @@
 # Lead manager
-This app is going to be used to handle leads of different users.
+This app is going to be used to handle leads of different users. So we will have to handle the list of leads, as well as the creation and deletion of them.
 We are going to use Bootstrap for the stylesheets.
 
 In this README file, you will learn the steps that it took to build it:
@@ -221,6 +221,7 @@ And this component Alert we will bring it to the App.js.
 
 - Now we will create the errors reducer. For this, inside of the folder of reducers we create errors.js. We also add a new type of action.
 Once reducer created, we go inside of leads.js, and we will change where we catch the errors for adding leads.
+min 13, solve for the error handling
 
 
 
