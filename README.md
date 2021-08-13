@@ -49,7 +49,7 @@ And what we will obtain is:
         "message": "Contactame",
         "created_at": "2021-07-03T20:39:43.155856Z"
     }
-We sohuld obtain a status of 201, which is a succees status.
+We sohuld obtain a status of 201, which is a succees.
 We could create another one.
 
 If we now put in the url http://localhost:8000/api/leads/1/, and a GET request, we are going to obtain the information we just have uploaded.

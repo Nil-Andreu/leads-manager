@@ -11,9 +11,9 @@ export class Alerts extends Component {
 
   // We will not render anything, will be just the pop up
   render() {
-    return <Fragment />
+    return <Fragment />;
   }
 }
 
 // We need to wrap the component that will have the alert
-export default withAlert(Alerts);
+export default withAlert()(Alerts);
